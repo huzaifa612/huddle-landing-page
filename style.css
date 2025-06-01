@@ -86,14 +86,20 @@ button:hover{
     .hero-image img{
         max-width: 100%;
         height: auto;
+        margin-left: auto;
+        margin-right: auto;
     }
-    h1, p{
+    h1, p {
         text-align: center;
-    }
-    p{
-        max-width: 90%;
-        width: 100%;
         margin: 0 auto;
+        padding: 0 1rem; /* Safe breathing space on small screens */
+        max-width: 90vw; /* Avoid overflow */
+        word-wrap: break-word;
+    }
+
+    p {
+        font-size: 1rem;
+        line-height: 1.6;
     }
     button{
         display: block;
@@ -107,5 +113,10 @@ button:hover{
         margin: 2rem auto;
         width: fit-content;
         float: none;
+    }
+    .images img {
+        width: 2rem;
+        height: 2rem;
+        object-fit: contain;
     }
 }
