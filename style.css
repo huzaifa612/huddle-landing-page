@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("images/bg-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: hsl(257, 40%, 49%);
+    font-family: "Open Sans", sans-serif;
+}
+.logo{
+    margin-top: 1.875rem;
+    margin-left: 3.125rem;
+}
+.hero{
+    display: flex;
+    justify-content: space-between;
+}
+.hero-image{
+    margin-top: 2.5rem;
+    margin-left: 3.125rem;
+}
+.hero-image img{
+    max-width: 39.375rem;
+}
+.hero-text{
+    margin-top: 3.75rem;
+    margin-right: 8.125rem;
+    width: 28.75rem;
+}
+h1{
+    font-size: 2.5rem;
+    color: #fff;
+}
+p{
+    margin-top: 1.25rem;
+    color: hsl(300, 69%, 71%);
+    line-height: 1.5;
+}
+button{
+    padding: 15px 60px 15px 60px;
+    margin-top: 1.25rem;
+    border-radius: 1.5625rem;
+    border: none;
+    color: hsl(257, 40%, 49%);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+button:hover{
+    transform: scale(1.02);
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
+}
+.images{
+    display: flex;
+    justify-content: space-evenly;
+    float: right;
+    margin-right: 5.625rem;
+}
+.images img{
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-left: 0.625rem;
+}
+@media(max-width: 768px){
+    body{
+        background-image: url("images/bg-mobile.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .logo{
+        margin-top: 5rem;
+    }
+    .hero{
+        display: block;
+    }
+    .hero-image{
+        margin-top: 7.5rem;
+    }
+    .hero-image img{
+        width: 21.875rem;
+    }
+    h1, p{
+        text-align: center;
+    }
+    p{
+        width: 22.5rem;
+        margin: 0 auto;
+    }
+    button{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .images{
+        margin-top: 1.875rem;
+        margin-right: 12.5rem;
+        padding-bottom: 3.125rem;
+    }
+}
