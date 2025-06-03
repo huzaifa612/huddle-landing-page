@@ -55,6 +55,8 @@ button{
 button:hover{
     transform: scale(1.02);
     box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
+    background-color: #e980e7;
+    color: #fff;
 }
 .images{
     display: flex;
